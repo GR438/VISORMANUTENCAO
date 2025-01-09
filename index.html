@@ -250,28 +250,6 @@
         }
 
         function mostrarManutencao() {
-            document.getElementById('manutencao').style.display = 'block';
-            document.getElementById('dashboard').style.display = 'none';
-            atualizarTabela();
-        }
+            document.getElementById('manutencao').style.display =
 
-        function mostrarDashboard() {
-            document.getElementById('manutencao').style.display = 'none';
-            document.getElementById('dashboard').style.display = 'block';
-            carregarDashboard();
-        }
-
-        function calcularTempoDecorrido(inicio) {
-            const agora = new Date();
-            const diferenca = agora - inicio; // diferença em milissegundos
-            const minutos = Math.floor(diferenca / (1000 * 60));
-            return `${minutos} min`;
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            mostrarManutencao();
-        });
-    </script>
-</body>
-</html>
 
